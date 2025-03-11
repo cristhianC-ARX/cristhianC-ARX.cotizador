@@ -10,14 +10,14 @@
   
 body {
   font-family: Arial, sans-serif;
-  margin: 0; /* Elimina el margen por defecto del body */
-  height: 100vh; /* Asegura que el body tenga altura completa de la ventana */
-  display: flex; /* Usa flexbox para centrar el contenido horizontalmente */
-  justify-content: center; /* Centra el contenido horizontalmente */
-  align-items: flex-start; /* Alinea el contenedor hacia el principio del eje vertical */
-  background-color: #3c4f5e; /* Fondo */
-  color: black; /* Texto negro */
-  padding-top: 20px; /* Ajusta el espacio superior para subir el contenedor */
+  margin: 0; 
+  height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+  background-color: #3c4f5e;
+  color: black; 
+  padding-top: 20px; 
 }
 
 .container {
@@ -30,17 +30,17 @@ body {
   overflow: hidden;
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: 100px auto; /* Ajusta el tamaño de la imagen según tus preferencias */
+  background-size: 100px auto; 
 }
     label {
     display: inline-block;
-    width: 200px; /* Ajusta el ancho según tus necesidades */
+    width: 200px; 
   }
-/* Centrar el título */
+
 .container h2 {
-  text-align: center; /* Centra el texto del título */
-  color: #ff8c00; /* Texto naranja */
-  text-shadow: 1px 1px 1px #333; /* Contorno naranja */
+  text-align: center; 
+  color: #ff8c00; 
+  text-shadow: 1px 1px 1px #333;
 }
     button {
       margin-top: 16px;
@@ -48,17 +48,17 @@ body {
     .btn-limpiar {
       display: inline-block;
       margin-top: 10px;
-      background-color: #ff8c00; /* Fondo naranja */
-      color: white; /* Texto blanco */
-      text-shadow: 1px 1px 1px #333; /* Contorno naranja */
+      background-color: #ff8c00; 
+      color: white; 
+      text-shadow: 1px 1px 1px #333;
     }
     .btn-mostrar,
     .btn-imprimir {
       display: inline-block;
       margin-right: 10px; 
-      background-color: #ff8c00; /* Fondo naranja */
-      color: white; /* Texto blanco */
-      text-shadow: 1px 1px 1px #333; /* Contorno naranja */
+      background-color: #ff8c00; 
+      color: white; 
+      text-shadow: 1px 1px 1px #333; 
     }
     table {
       width: 100%;
@@ -69,67 +69,65 @@ body {
       border: 1px solid #ddd;
       padding: 8px;
       text-align: left;
-      color: black; /* Texto negro */
+      color: black; 
     }
     th {
       background-color: #ff8c00;
       color: white;
     }
     #resultado {
-      color: black; /* Texto negro en el resultado */
+      color: black; 
     }
     .imagen-container {
       position: absolute;
       top: 20px;
       right: 20px;
-      display: none; /* Oculta la imagen en pantalla */
+      display: none; 
     }
     .imagen-container {
       position: absolute;
       top: 20px;
       right: 20px;
     }
-    /* ... (otros estilos) ... */
 
-/* Estilos para la impresión */
   @media print {
     body {
-      background-color: white; /* Fondo blanco para la versión impresa */
-      display: block; /* Asegura que el body no use flexbox en impresión */
-      margin: 0; /* Elimina márgenes adicionales */
+      background-color: white; 
+      display: block; 
+      margin: 0; */
     }
 
     .container {
-      max-width: none; /* Elimina el ancho máximo para impresión */
-      width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
-      box-shadow: none; /* Elimina la sombra para impresión */
-      padding: 0; /* Ajusta el padding según tus necesidades */
+      max-width: none; 
+      width: 100%;
+      box-shadow: none;
+      padding: 0;
     }
 
     .btn-calcular,
     .btn-mostrar,
     .btn-imprimir,
     .btn-limpiar {
-      display: none; /* Oculta los botones al imprimir */
+      display: none;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      page-break-inside: auto; /* Permite saltar a una nueva página dentro de la tabla */
+      page-break-inside: auto;
     }
 
     tr {
-      page-break-inside: avoid; /* Evita que una fila se divida entre páginas */
-      page-break-after: auto; /* Indica que se debe agregar un salto de página después de cada fila */
+      page-break-inside: avoid; 
+      page-break-after: auto; 
     }
 
     td, th {
-      font-size: 10px; /* Ajusta el tamaño de la fuente para que quepa en una página */
-      border: 1px solid #ddd; /* Agrega bordes a las celdas para mejorar la visualización */
-      padding: 5px; /* Ajusta el espaciado interno de las celdas */
+      font-size: 10px;
+      border: 1px solid #ddd; 
+      padding: 5px; 
       text-align: left;
-      color: black; /* Texto negro */
+      color: black; 
     }
 
     th {
@@ -138,22 +136,22 @@ body {
     }
 
     .imagen-container {
-      display: none; /* Oculta la imagen al imprimir para ahorrar espacio */
+      display: none; 
     }
 
     @page {
-      size: auto; /* Tamaño de página automático */
-      margin: 5mm; /* Márgenes de página */
+      size: auto; 
+      margin: 5mm; 
     }
 
     @top-center {
-      content: "Cotizador | PrestaExpress"; /* Contenido del encabezado */
+      content: "Cotizador | PrestaExpress";
       font-size: 16px;
-      color: #ff8c00; /* Color naranja */
+      color: #ff8c00;
     }
 
     @bottom-center {
-      content: ""; /* Puedes dejar esto vacío o personalizar según tus necesidades */
+      content: ""; 
     }
   }
   </style>
@@ -197,36 +195,34 @@ body {
  <script>
    
    
-   // ... (otras funciones) ...
+
    
  function formatoMonto() {
-  let monto = document.getElementById('monto').value.replace(/,/g, ''); // Eliminar comas existentes
-  monto = parseFloat(monto.replace(/[$]/g, '')); // Eliminar símbolos de moneda si existen
-  document.getElementById('monto').value = monto.toLocaleString('en-US'); // Aplicar formato con comas
+  let monto = document.getElementById('monto').value.replace(/,/g, ''); 
+  monto = parseFloat(monto.replace(/[$]/g, '')); 
+  document.getElementById('monto').value = monto.toLocaleString('en-US'); 
 }
 
 
     function limpiarFormulario() {
-      // Limpiar los campos del formulario
+     
       document.getElementById('monto').value = '';
       document.getElementById('tasa').value = '';
       document.getElementById('plazo').value = '';
 
-      // Limpiar resultados anteriores
+     
       document.getElementById('resultado').innerHTML = '';
       document.getElementById('tabla-container').innerHTML = '';
     }
 
-   // ... (otras funciones) ...
 
-  // Agregar un evento de escucha a los campos de entrada
- // Agregar un evento de escucha a los campos de entrada
+
 document.getElementById('monto').addEventListener('keydown', function (event) {
   if (event.key === 'Enter') {
-    event.preventDefault(); // Evitar que se envíe el formulario por defecto
+    event.preventDefault();
     calcularCuota();
     mostrarCuotas();
-    document.getElementById('resultado').style.display = 'block'; // Mostrar el cuadro del resultado
+    document.getElementById('resultado').style.display = 'block';
   }
 });
 
@@ -235,7 +231,7 @@ document.getElementById('tasa').addEventListener('keydown', function (event) {
     event.preventDefault();
     calcularCuota();
     mostrarCuotas();
-    document.getElementById('resultado').style.display = 'block'; // Mostrar el cuadro del resultado
+    document.getElementById('resultado').style.display = 'block'; 
   }
 });
 
@@ -244,7 +240,7 @@ document.getElementById('plazo').addEventListener('keydown', function (event) {
     event.preventDefault();
     calcularCuota();
     mostrarCuotas();
-    document.getElementById('resultado').style.display = 'block'; // Mostrar el cuadro del resultado
+    document.getElementById('resultado').style.display = 'block'; 
   }
 });
 
@@ -253,8 +249,8 @@ document.getElementById('plazo').addEventListener('keydown', function (event) {
 	  
 function calcularCuota() {
   var monto = parseFloat(document.getElementById('monto').value.replace(/[,Q]/g, ''));
-  var tasa = parseFloat(document.getElementById('tasa').value) / 100 / 12; // Tasa mensual
-  var plazo = parseFloat(document.getElementById('plazo').value) * 12; // Plazo en meses
+  var tasa = parseFloat(document.getElementById('tasa').value) / 100 / 12;
+  var plazo = parseFloat(document.getElementById('plazo').value) * 12; 
 
   cuota = (monto * tasa) / (1 - Math.pow(1 + tasa, -plazo));
 
@@ -264,13 +260,12 @@ function calcularCuota() {
 
 function mostrarCuotas() {
     var monto = parseFloat(document.getElementById('monto').value.replace(/[,Q]/g, ''));
-    var tasa = parseFloat(document.getElementById('tasa').value) / 100 / 12; // Tasa mensual
-    var plazo = parseFloat(document.getElementById('plazo').value) * 12; // Plazo en meses
+    var tasa = parseFloat(document.getElementById('tasa').value) / 100 / 12;
+    var plazo = parseFloat(document.getElementById('plazo').value) * 12; 
 
-    var { mes, anio } = obtenerMesYAnioSeleccionados(); // Obtiene el mes y el año seleccionados
+    var { mes, anio } = obtenerMesYAnioSeleccionados(); 
 
-    var fecha = new Date(anio, mes - 1, 1); // Inicia desde el mes seleccionado
-
+    var fecha = new Date(anio, mes - 1, 1);
     var cuota = (monto * tasa) / (1 - Math.pow(1 + tasa, -plazo));
 
     if (isNaN(cuota)) {
@@ -327,7 +322,7 @@ function mostrarCuotas() {
       tbody.appendChild(fila);
 
       balanceInicial = balanceFinal;
-      fecha.setMonth(fecha.getMonth() + 1); // Avanzar al siguiente mes
+      fecha.setMonth(fecha.getMonth() + 1); 
     }
 
     tabla.appendChild(tbody);
@@ -339,16 +334,16 @@ function mostrarCuotas() {
   }
 
   function imprimirCuotas() {
-  // Oculta los elementos no deseados antes de imprimir
+
   var botones = document.querySelectorAll('.btn-limpiar, .btn-mostrar, .btn-imprimir');
   for (var i = 0; i < botones.length; i++) {
     botones[i].style.display = 'none';
   }
 
-  // Imprime la ventana
+
   window.print();
 
-  // Restaura la visibilidad de los botones después de imprimir
+
   for (var i = 0; i < botones.length; i++) {
     botones[i].style.display = 'block';
   }
@@ -359,7 +354,7 @@ function mostrarCuotas() {
         var currentDate = new Date();
         var select = document.getElementById('fecha');
 
-        for (var i = 0; i < 60; i++) { // 5 años hacia adelante
+        for (var i = 0; i < 60; i++) { 
             var year = currentDate.getFullYear() + Math.floor((currentDate.getMonth() + i) / 12);
             var month = (currentDate.getMonth() + i) % 12 + 1;
             var option = document.createElement('option');
